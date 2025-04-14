@@ -30,7 +30,7 @@ This document outlines a complete MLOps and DevOps pipeline for building a self-
 5. **Run Evaluation:**
    - `MT-Bench`, `MMLU`, and `Branch Tests`
    - Store evaluation scores (CSV/JSON)
-6. **Convert to GGUF (optional)**
+6. **Convert to GGUF **
    - Prepares model for quantized CPU/GPU use
 7. **Model Registry Update (version tagging)**
 8. **Shut down EC2 Runner**
@@ -52,7 +52,7 @@ from instructlab.training import run_training, TorchrunArgs, TrainingArgs
 - `data_output_dir`: intermediate processed data
 - `num_epochs`, `batch_size`, `learning_rate`, etc.
 
-Support for **LoRA**, **DeepSpeed**, and **FSDP** available.
+
 
 ---
 
